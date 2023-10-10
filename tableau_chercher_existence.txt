@@ -1,0 +1,25 @@
+algorithme tableau_chercher_existence
+
+variable
+	tableau T(10):entier
+	i,n,c:entier
+
+Debut
+	pour i <-- 0 a 9 faire 
+		ecrire("donner le nombre ",i+1)
+		lire(T(i))
+	fin pour
+	ecrire("Entrez le nombre que vous souhaitez rechercher")
+	lire(n)
+	c<--0
+	pour i <-- 0 a 9 faire 
+		si (n=T(i)) alors
+			c<--c+1
+		fin si
+	fin pour
+	si (c>0) alors
+		ecrire(n,"se trouve dans le tableau")
+	sinon
+		ecrire(n,"ne se trouve pas dans le tableau")
+	fin si
+fin
